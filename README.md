@@ -66,7 +66,6 @@
 - Configured trunk port with VLAN 99 as native VLAN
 - Verified with `show vlan brief` and `show interfaces trunk`
 
-📄 Config: [`configs/phase1-vlans.txt`](configs/phase1-vlans.txt)
 
 ---
 
@@ -77,7 +76,6 @@
 - Disabled Telnet; enforced SSHv2 with RSA 2048-bit keys
 - Verified: both PCs receive addresses, SSH access works from both VLANs
 
-📄 Config: [`configs/phase2-dhcp-mgmt.txt`](configs/phase2-dhcp-mgmt.txt)
 
 ---
 
@@ -89,7 +87,6 @@
 
 > ⚠️ Note: The Catalyst 2960-C does not support full L3 inter-VLAN routing natively. A router or L3 switch is required for production inter-VLAN routing. Packet Tracer was used to supplement this phase.
 
-📄 Config: [`configs/phase3-routing.txt`](configs/phase3-routing.txt)
 
 ---
 
@@ -105,7 +102,6 @@
 - **DHCP Snooping:** Enabled and tested using Kali as a rogue DHCP server
 - Disabled all unused ports and assigned them to VLAN 999
 
-📄 Config: [`configs/phase4-security.txt`](configs/phase4-security.txt)
 
 ---
 
@@ -116,7 +112,6 @@
 - Enabled **BPDU Guard** on access ports to prevent unauthorized switches
 - Configured **EtherChannel (LACP)** by bundling two ports, verified with `show etherchannel summary`
 
-📄 Config: [`configs/phase5-stp-ether.txt`](configs/phase5-stp-ether.txt)
 
 ---
 
